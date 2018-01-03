@@ -8,9 +8,58 @@
 <!--<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> 
+	$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+	$("#flip5").click(function(){
+        $("#panel5").slideToggle("slow");
+    });
+		$("#flip6").click(function(){
+        $("#panel6").slideToggle("slow");
+    });
+	});
+</script>
 <link href="Mstyle01.css" rel="stylesheet" type="text/css">
 <link href="Mstyle02.css" rel="stylesheet" type="text/css">
 <link href="Mstyle03.css" rel="stylesheet" type="text/css" media="screen">
+<style> 
+#panel, #flip{
+    padding: 5px;
+    text-align: center;
+    background-color: #F0FFFF;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+#panel5, #flip5{
+    padding: 5px;
+    text-align: center;
+    background-color: #F0FFFF;
+    border: solid 1px #c3c3c3;
+}
+
+#panel5 {
+    padding: 50px;
+    display: none;
+}
+#panel6, #flip6{
+    padding: 5px;
+    text-align: center;
+    background-color: #F0FFFF;
+    border: solid 1px #c3c3c3;
+}
+
+#panel6 {
+    padding: 50px;
+    display: none;
+}
+</style>
 </head>
 <body>
 <div id="wrapper">
@@ -21,7 +70,7 @@
             </div>
             <div id="menu">
                 <ul>
-                    <li class="current_page_item" onclick="javascript:location.href='https://fcu-d0449172.github.io/webtest/'"><a href="#">Home</a></li>
+                    <li><a href="../首頁.html">Home</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Problems</a></li>
                     <li><a href="#">Contact</a></li>
@@ -38,20 +87,20 @@
         <div id="column1">
            <h2>原住民教育問題</h2>
             <p><img src="images/004.jpeg" width="300" height="150" alt=""></p>
-            <p>地理位置較為偏僻，相對的資源教為稀少</p>
-            <p class="button"><a href="#">Read More</a></p>
+			<p id="flip5"class="button">更多</p>
+			<p id ="panel5">地理位置較為偏僻，相對的資源教為稀少</p>
         </div>
         <div id="column2">
             <h2>需要什麼援助</h2>
             <p><img src="images/003.jpeg" width="300" height="150" alt=""></p>
-            <p>經濟困難</p>
-            <p class="button"><a href="#">Read More</a></p>
+            <p id="flip"class="button">更多</p>
+			<p id="panel">一、大專院校在學率仍低於一般生，近5年無明顯改善在學率是評量各年齡層人口接受相對應層級教育之比率，從國小到國中，原民學生粗在學率（編按）與一般學生無顯著差距，皆高達98％以上，而原民在高中的在學率5年來增加0.7個百分點。但原住民學生在大專院校的粗在學率僅有51.2％，和一般學生落差達33.9個百分點，且原民學生在學率與101學年相比也只增加0.3個百分點。</p>
         </div>
         <div id="column3">
             <h2>可以如何援助他們</h2>
             <p><img src="images/0829.jpg" width="300" height="150" alt=""></p>
-            <p>如果您願意幫助他們，可以...</p>
-            <p class="button"><a href="#">Read More</a></p>
+            <p id ="flip6"class="button">更多</p>
+            <p id="panel6">test</p>
         </div>
     </div>
 <div id="footer">
