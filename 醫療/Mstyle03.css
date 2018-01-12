@@ -58,7 +58,7 @@ a:hover {
 #header-wrapper {
 	overflow: hidden;
 	height: 600px;
-	background: url(img01.jpg) repeat;
+	/*background: url(img01.jpg) repeat;*/
 }
 
 #header {

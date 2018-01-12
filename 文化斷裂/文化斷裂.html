@@ -1,6 +1,9 @@
 
 <!DOCTYPE html>
 <html><head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <!--<meta name="keywords" content="" />
 <meta name="description" content="" />-->
@@ -10,8 +13,14 @@
 <script src="jquery-3.2.1.js"></script>
 <script>
 $(document).ready(function(){
-  $("#toggle").click(function(){
-    $("p").fadeToggle(1000);
+  $("#toggle1").click(function(){
+    $("#p1").fadeToggle(1000);
+  });
+  $("#toggle2").click(function(){
+    $("#p2").fadeToggle(1000);
+  });
+  $("#toggle3").click(function(){
+    $("#p3").fadeToggle(1000);
   });
 });
 </script>
@@ -23,7 +32,7 @@ $(document).ready(function(){
 <link href="Mstyle03.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-<div id="wrapper">
+        <div class = "jumbotron text-center" id="wrapper" >
     <div id="header-wrapper">
         <div id="header" class="container">
             <div id="logo"  style="background-color:#000000;width:400px;height:150px;text-align:center;">
@@ -31,7 +40,7 @@ $(document).ready(function(){
             </div>
             <div id="menu">
                 <ul>
-                    <li class="current_page_item" onclick="javascript:location.href='https://fcu-d0449172.github.io/webtest/'"><a href="../首頁/首頁.html">Home</a></li>
+                    <li class="current_page_item" onclick="javascript:location.href='https://fcu-d0449172.github.io/webtest/'"><a href="../首頁.html">Home</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Problems</a></li>
                     <li><a href="#">Contact</a></li>
@@ -48,20 +57,20 @@ $(document).ready(function(){
         <div id="column1">
            <h2 id = "small_title">危機所在？</h2>
             <img src="./images/img06.png" width="150" height="150" alt="">
-            <p>　　聯合國教科文組織2009年公告台灣有10個原住民族語瀕臨消失，激發原住民族復振文化的警覺，原住民學者波宏明難掩焦急地說：「語言斷了，文化也滅了。」<br/>(2017-08-12 20:10聯合報 記者王昭月╱即時報導)</p>
-            <button id="toggle">Read More/Less</button>
+            <p id="p1" style="height:250px; display:none;">　　聯合國教科文組織2009年公告台灣有10個原住民族語瀕臨消失，激發原住民族復振文化的警覺，原住民學者波宏明難掩焦急地說：「語言斷了，文化也滅了。」</p>
+            <button id="toggle1">Read More/Less</button>
         </div>
         <div id="column2">
             <h2 id = "small_title">原因何在？</h2>
             <img src="./images/img07.png" width="150" height="150" alt="">
-            <p>　　年輕人不願學習族語，族語並沒辦法用文字表現出來，以至於族語沒辦法傳承下去。</p>
-            <button id="toggle">Read More/Less</button>
+            <p id="p2" style="height:250px; display:none;">　　年輕人不願學習族語，族語並沒辦法用文字表現出來，以至於族語沒辦法傳承下去。</p>
+            <button id="toggle2">Read More/Less</button>
         </div>
         <div id="column3">
             <h2 id = "small_title">如何解決？</h2>
             <img src="./images/img08.png" width="150" height="150" alt="">
-            <p>　　從幼稚園開始讓孩童們沉浸在族語的環境中，確保語言能傳承下去。</p>
-            <button id="toggle">Read More/Less</button>
+            <p id="p3" style="height:250px; display:none;">　　從幼稚園開始讓孩童們沉浸在族語的環境中，確保語言能傳承下去。</p>
+            <button id="toggle3">Read More/Less</button>
         </div>
     </div>
 <div id="footer">
