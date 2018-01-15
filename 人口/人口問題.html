@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <script src="https://use.fontawesome.com/79e086af27.js"></script>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!--<meta name="keywords" content="" />
-        <meta name="description" content="" />-->
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <!--<title>ColoreGiallo by TEMPLATED</title>-->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><meta http-equiv="content-type" content="text/html"; charset="utf-8">
+        
         <title>人口問題</title>
-        <!--<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
-        <link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
-        <link href="style.css" rel="stylesheet" type="text/css" media="screen" />-->
+        
+        <script src="https://use.fontawesome.com/79e086af27.js"></script>
         <link href="Mstyle01.css" rel="stylesheet" type="text/css">
         <link href="Mstyle02.css" rel="stylesheet" type="text/css">
         <link href="Mstyle03.css" rel="stylesheet" type="text/css" media="screen">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
         <!-- JQuery -->
         <script>
             $(document).ready(function() {
                 $('#btn1').hover(function() {
-                    $(this).addClass('.titleOn');
+                    $(this).addClass('titleOn');
                 }, function() {
-                    $(this).removeClass('.titleOn');
+                    $(this).removeClass('titleOn');
                 }).click(function() {
                     $('#child1').slideToggle();
                 }).siblings('#child1').hide();
 
                 $('#btn2').hover(function() {
-                    $(this).addClass('.titleOn');
+                    $(this).addClass('titleOn');
                 }, function() {
-                    $(this).removeClass('.titleOn');
+                    $(this).removeClass('titleOn');
                 }).click(function() {
                     $('#child2').slideToggle();
                 }).siblings('#child2').hide();
             });
         </script>
+
         <!-- CSS -->
         <style type = "text/css">
             #logo {
-                background-color:#000000;
+                background-color:black;
                 width: 320px;
+                height:200px;
                 text-align: center;
                 letter-spacing: 2px;
             }
-            p, h1, h2, div { font-family:Microsoft JhengHei; } 
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            .headline {
+                font-weight:bold;
+                text-align:center;
+                line-height: 100px;
+                font-size:100%;
+                color:red;
+            }
+            p, b, h1, h2, h3, div { font-family:Microsoft JhengHei; } 
             #left {
-                width: 42%;
+                width: 43%;
                 line-height: 50px;
                 padding-left: 80px;
                 float: left;
             }
             #right {
-                width: 42%;
+                width: 43%;
                 line-height: 50px;
                 padding-right: 50px;
                 float: right;
@@ -65,27 +75,31 @@
                 background: url(icon_q_a.gif) no-repeat 0px 3px;
                 color:#1186ec;
                 cursor: pointer;
+                font-size:50%;
             }
-            
-            .titleOn { text-decoration: underline; }
+            .titleOn {  
+                text-decoration: underline;
+                color:darkgreen    
+             }
             .child {
                 margin: 6px 0 0;
                 background: url(icon_q_a.gif) no-repeat 0px -24px;
                 color:#000000;
             }
-        </style>
-        <!--Java Script-->
-        <script>
             
-        </script>
-        
+        </style>
+
+        <!--Java Script-->
+        <script></script>
     </head>
     <body>
+        <!--Bootstrap -->
         <div class = "jumbotron text-center" id="wrapper" >
             <div id="header-wrapper">
                 <div id="header" class="container">
-                    <div id="logo" style="background-color:#000000;width:320px;height:200px;text-align:center;">
-                        <h2><a href="#" style="color:#FFFFFF;font-size: 40px;line-height: 10px;">Population<br>人口問題</a></h2>
+                    <div id="logo">
+                        <h2><a href="#" style="color:white;font-size: 40px;line-height: 24px;">Population</a></h2>
+                        <h2><a href="#" style="color:white;font-size: 40px;line-height: 24px;">人口問題</a></h2>
                     </div>
                     <div id="menu">
                         <ul>
@@ -101,8 +115,10 @@
                 </div>
             </div>  
             <!-- end #header -->
-            <div id="featured-content" style="background-color:rgb(29, 198, 204)">
+            <div id="featured-content">
                 <div id="Map" style="background-color:rgb(242, 236, 205)">
+                    <div class="headline" style="font-size: 70px;">人口分布圖</div>
+                    <div>台閩地區原住民人口共有近五十五萬三千人，約占總人口的百分之二。</div>
                     <!--<a href="http://www.twedance.org/aboriginal00.aspx">-->
                     <img id="Image-Maps-Com-image-maps-2018-01-12-121207" src="http://www.image-maps.com/m/private/0/rjt2tv2i57jpkp6qb7a55cejg7_.png" border="0" width="920" height="672" orgWidth="920" orgHeight="672" usemap="#image-maps-2018-01-12-121207" alt="" />
                     <map name="image-maps-2018-01-12-121207" id="ImageMapsCom-image-maps-2018-01-12-121207">
@@ -126,36 +142,36 @@
                         <area id="Aboriginal1" alt="原住民" title="原住民16族約有55.3萬人，佔總人口數的2%" href="#Map" shape="poly" coords="577,108,561,98,552,103,537,123,528,111,514,112,505,125,504,143,475,157,461,152,461,167,458,178,448,194,454,210,447,225,449,242,443,244,429,250,426,273,439,277,440,292,440,309,429,315,427,320,442,323,452,320,451,329,448,339,447,349,440,350,434,344,426,350,424,358,431,363,428,371,422,375,416,388,415,403,417,420,424,428,433,432,433,444,431,454,421,462,420,476,411,488,415,499,420,508,412,509,416,560,441,600,443,621,455,622,469,638,469,617,476,613,470,607,470,585,468,574,471,556,479,548,482,521,508,484,520,472,518,466,526,463,552,420,548,403,560,367,559,362,562,354,557,345,563,332,568,302,571,272,578,258,579,236,582,232,579,227,596,212,595,200,600,184,595,180,602,167,592,151,576,152,557,138,557,116" style="outline:none;" target="_self"     />
                         <area id="Aboriginal2" alt="原住民" title="原住民16族約有55.3萬人，佔總人口數的2%" href="#Map" shape="poly" coords="518,597,531,599,533,606,528,608,537,613,534,618,527,614,522,612,519,607" style="outline:none;" target="_self"     />
                     </map>
-                    <!--</a>-->
                 </div>
-                <div id="left">
-                    <div>
-                        <h2>主要問題</h2>
-                        <p><img src="images/高齡化.png" width="200" alt="主要問題"></p>
-                    </div>
-                    <div class="headline">
-                        <p>少子化、高齡化、人口變遷...</p>
-                        <p id="child1" class="child">
-                            123
-                        </p>
-                        <div id="btn1" class="button">Read More</div>
-                    </div>
+
+                <div id="left" class="col-md-4">    
+                    <h2 class="headline">主要問題</h2>
+                    <p></p><img src="images/高齡化.png" width="200" alt="主要問題" class="img-rounded"></p>               
+                    <b style="color:black; font-size:20px;"><i>少子化、高齡化、人口變遷</i></b>
+                    <p id="child1" class="child">
+                        偏鄉的工作環境嚴峻、機會稀少<br>
+                        壯年人為了養家活口必須到外地<br>
+                        使得原本人口問題更加嚴重<br>
+                        慢慢的出現少子化與高齡化現象
+                    </p>
+                    <div id="btn1" class="button">Read More</div>
                 </div>
-                <div id="right">           
-                    <div >
-                        <h2>解決辦法</h2>
-                        <p><img src="images/解決辦法.png" width="200" alt="解決辦法"></p>
-                    </div>
-                    <div class="headline">
-                        <p>近年來地方政府持續推動...</p>
-                        <p id="child2" class="child">
-                            456
-                        </p>
-                        <div id="btn2" class="button">Read More</div>
-                    </div>
+
+                <div id="right" class="col-md-4">           
+                    <h2 class="headline">解決辦法</h2>
+                    <p><img src="images/解決辦法.png" width="200" alt="解決辦法" class="img-circle"></p>
+                    <b style="color:black; font-size:20px;"><i>地方政府與人民愛心</i></b>
+                    <p id="child2" class="child">
+                        近年來政府持續推動對應的政策<br>
+                        希望能藉此改善偏鄉環境<br>
+                        但如果能讓更多民眾正視這個問題<br>
+                        捐獻送愛心都是非常好的解決之道
+                    </p>
+                    <div id="btn2" class="button">Read More</div>
                 </div>
             </div>
             <!-- end #featured-content -->
+
             <div id="footer">
                 <p>© 逢甲大學web程式設計<a href="http://www.fcu.edu.tw">首頁</a>. Design by 不要當我</p>
             </div>  
